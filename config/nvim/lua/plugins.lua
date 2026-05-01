@@ -97,5 +97,9 @@ require("lazy").setup({
         end,
     },
     "Civitasv/cmake-tools.nvim",
+    {
+	    "kmontocam/nvim-conda",
+	    dependencies = { "nvim-lua/plenary.nvim" },
+    }
 }
 )

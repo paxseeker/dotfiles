@@ -293,7 +293,7 @@ input {
     layer-rule {
         // This is for swaybg; change for other wallpaper tools.
         // Find the right namespace by running niri msg layers.
-        match namespace=r#"wallpaper"#
+        match namespace=r#"awww"#
         match at-startup=true
         place-within-backdrop true
     }
@@ -306,7 +306,7 @@ input {
 
     // This line starts waybar, a commonly used bar for Wayland compositors.
     spawn-sh-at-startup "source ~/.config/waybar/scripts/alter-config-niri.sh && waybar && hypridle"
-    spawn-sh-at-startup "source ~/.config/hypr/Scripts/wallpaper-engine-start.sh"
+    spawn-sh-at-startup "awww-daemon"
     spawn-sh-at-startup "systemctl --user start hyprpolkitagent"
     spawn-sh-at-startup "swayidle -w timeout 300 'niri msg action power-off-monitors' timeout 301 'hyprlock'"
     // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:

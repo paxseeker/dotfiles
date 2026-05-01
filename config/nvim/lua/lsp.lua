@@ -10,7 +10,7 @@ require('mason').setup({
 
 require('mason-lspconfig').setup({
     -- A list of servers to automatically install if they're not already installed
-    ensure_installed = { 'clangd', 'pylsp', 'lua_ls', 'cmake', 'glsl_analyzer', 'rust_analyzer' },
+    ensure_installed = {'pylsp', 'clangd', 'lua_ls', 'cmake', 'glsl_analyzer', 'rust_analyzer' },
 })
 
 local lspconfig = require('lspconfig')

@@ -18,7 +18,7 @@ alias cdrust='cd /mnt/newdisk/Project/rustProject'
 alias get_idf='source /mnt/newdisk/Project/esp/esp-idf-v5.3.1/export.sh'
 export IDF_PATH='/mnt/newdisk/Project/esp/esp-idf-v5.3.1'
 
-
+alias remountopenlist='fusermount -uz /home/zjx/openlist & rclone mount openlist: /home/zjx/openlist --vfs-cache-mode full --vfs-read-chunk-size 128M --no-modtime --dir-cache-time 1h --poll-interval 30s --timeout 1m --retries 3'
 
 function bliss {
     cdvm

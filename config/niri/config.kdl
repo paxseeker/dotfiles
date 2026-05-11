@@ -309,6 +309,7 @@ input {
     spawn-sh-at-startup "awww-daemon"
     spawn-sh-at-startup "systemctl --user start hyprpolkitagent"
     spawn-sh-at-startup "swayidle -w timeout 300 'niri msg action power-off-monitors' timeout 301 'hyprlock'"
+    spawn-sh-at-startup "fusermount -uz /home/zjx/openlist & rclone mount openlist: /home/zjx/openlist --vfs-cache-mode full --vfs-read-chunk-size 128M --no-modtime --dir-cache-time 1h --poll-interval 30s --timeout 1m --retries 3"
     // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
     // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
